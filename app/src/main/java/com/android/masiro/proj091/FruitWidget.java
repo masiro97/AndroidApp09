@@ -61,6 +61,7 @@ public class FruitWidget extends LinearLayout implements View.OnClickListener {
             if (BUTTON_MODE == BUTTON_MODE_ADD) {
                 onItemListener.OnAdd(et.getText().toString(), imgno
                         , Integer.toString(Fruit.pricelist[priceno]));
+                et.setText(null);
             }
             else if(BUTTON_MODE == BUTTON_MODE_MODIFIED){
 
